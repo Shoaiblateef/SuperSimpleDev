@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scisser</title>
+</head>
+
+<body>
+    
+  
+    <p>Select Rock Papper Scisser</p>
+
+    <button onclick=" let MathRandamNumber = Math.random();
+    let ComputerMove = '';   
+    if (MathRandamNumber >= 0  &&  MathRandamNumber < 1/3 ) {
+         ComputerMove = 'Rock';
+     } else if (MathRandamNumber > 1/3 && MathRandamNumber < 2/3 ) {
+         ComputerMove = 'Paper';
+     } else if (MathRandamNumber >= 2/3  && MathRandamNumber < 1 ){
+          ComputerMove = 'Scisser'; } 
+
+          let result = '';
+          if (ComputerMove === 'Rock') {
+                result = 'tire';
+          } else if (ComputerMove === 'Paper') {
+             result = 'you lose';
+          } else if (ComputerMove === 'Scisser') {
+            result = 'you win';
+
+          }  
+            alert( `computer movies ${ComputerMove} you are ${result} `)
+     "> Rock </button>
+     
+    <button
+    
+>Scisser</button>
+    <button>Paper</button>
+</body>
+
+</html>
